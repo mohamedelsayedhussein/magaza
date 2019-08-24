@@ -1,0 +1,88 @@
+/* =========== Start Globale Style ============ */
+
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  position: relative;
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+  padding: 0 2rem;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $mainColor;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-selection {
+  background-color: $mainColor;
+  color: #fff;
+}
+
+::-moz-selection {
+  background-color: $mainColor;
+  color: #fff;
+}
+
+::selection {
+  background-color: $mainColor;
+  color: #fff;
+}
+
+::focus {
+  outline: none;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+a {
+  text-decoration: none;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+/* ============= End Globale Style ============= */

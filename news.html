@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+	<title>maagaza</title>
+	<!--  create shorcut icon logo -->
+	<link rel="shortcut icon" href="img/logo.png" />
+	<!--  reset css default values  -->
+	<link rel="stylesheet" href="vendors/normalize.css" />
+	<!-- external style file -->
+	<link rel="stylesheet" href="css/style.css" />
+	<!--  font awesome icons library  -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+		integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+	<!--  animation library for some animations  -->
+	<link rel="stylesheet" href="vendors/animate.css" />
+	<!-- using swiper slider images -->
+	<link rel="stylesheet" href="vendors/swiper.min.css" />
+	<!-- using owl-carousel slider images  -->
+	<link rel="stylesheet" href="vendors/owl.carousel.min.css" />
+	<link rel="stylesheet" href="vendors/owl.theme.default.min.css" />
+	<!-- transition page animation -->
+	<link rel="stylesheet" href="vendors/animsition.min.css" />
+	<!--  using google web fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" />
+	<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="animsition-overlay" data-animsition-overlay="true">
+	<!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+<!-- ======================================
+            create top button
+======================================= -->
+<button id="up"><i class="fas fa-chevron-up"></i></button>
+
+<!-- ================================
+            message button  
+================================= -->
+	<div class="message"> <a href="#"><i class="far fa-envelope"></i></a></div>
+	
+<!-- ===============================
+                header
+================================ -->
+
+    <!-- hamburger menu -->
+    <div class="menu wow flip menu-sm-screen" data-wow-delay="1s"> 
+        <div class="bar"></div> <span>Menu</span>
+    </div>
+    <div class="sidebar"> <!-- open sidebar -->
+        <ul class="capitalize">
+            <li>
+                <a href="./index.html" class="animsition-link">Home</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="./find-home.html" class="animsition-link">Find a Home</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="./news.html" class="animsition-link active">News <span>&</span> Events</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="./developers.html" class="animsition-link">Developers</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="./about.html" class="animsition-link">About Us</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="./contact.html" class="animsition-link">Contact Us</a>
+                <div class="line"></div>
+            </li>
+            <li>
+                <a href="./log.html" class="animsition-link">Log In <span>OR</span> Register</a>
+            </li>
+        </ul>
+
+        <div class="close"> <span>&times;</span> </div>
+
+        <div class="icons"> <!-- Open Icons -->
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-youtube"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div> <!-- close Icons -->
+    </div> <!-- close sidebar -->
+
+    <header class="fixed-header">
+        <div class="head-control header-top">
+            <div class="container">
+                <div class="flex-box">
+                    <ul class="our-direct-contacts">
+                        <li>
+                            <a href="#"><i class="fas fa-phone-volume fa-lg"></i>(+241) 542 34251</a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="far fa-envelope"></i>info@webmail.com</a>
+                        </li>
+                    </ul>
+                    <div class="log-in-btn">
+                        <a href="./log.html" class="animsition-link">Log In <span>||</span> Register</a>
+                    </div>
+                    <ul class="our-social-contacts">
+                        <li>
+                            <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+                        </li>
+                        <li>
+                            <a href="#" class="linkedin-in"><i class="fab fa-linkedin-in"></i></a>
+                        </li>
+                    </ul>
+                </div> <!-- close flex-box -->
+            </div> <!-- close container -->
+        </div> <!-- close header-top -->
+
+        <div class="head-control header-mid">
+            <div class="flex-box">
+                <div class="menu-logo">
+                    <a href="./index.html" class="animsition-link">
+                        <h2><span>MAGAZA</span> HOLDING</h2>
+                    </a>
+                </div> <!-- close menu-logo -->
+                <nav class="primary-nav">
+                    <ul class="menu-bar-links">
+                        <li>
+                            <a href="./index.html" class="animsition-link">Home</a>
+                        </li>
+                        <li>
+                            <a href="./find-home.html" class="animsition-link">Find a Home</a>
+                        </li>
+                        <li>
+                            <a href="./news.html" class="animsition-link active">News & Events</a>
+                        </li>
+                        <li>
+                            <a href="./developers.html" class="animsition-link">Developers</a>
+                        </li>
+                        <li>
+                            <a href="./about.html" class="animsition-link">About Us</a>
+                        </li>
+                        <li>
+                            <a href="./contact.html" class="animsition-link">Contact Us</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div> <!-- close flex-box -->
+        </div> <!-- close header-mid-->
+    </header>
+
+	<!-- ====================
+		latest news section 
+	==================== -->
+	
+	<div class="latest-news blog" id="news"> <!-- open latest-news -->
+		<div class="container">	<!-- open container -->
+			<div class="go-back">
+				<a href="./index.html" class="animsition-link">
+					<i class="fa fa-home"></i>Home
+				</a>
+				<span><i class="breadcrumb-arrow"></i>News</span>
+			</div>
+			<h2 class="caption" class="capitalize">
+				<a href="#">Latest News</a>
+			</h2>
+			<div class="flex-box">	<!-- open flex-box -->
+				<div class="news blog-news"> <!-- open news -->
+					<div class="image">
+						<img src="img/home1.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons"> <!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div>	<!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>	<!-- close details -->
+				</div>	<!-- close news -->
+				<div class="news blog-news"> <!-- open news -->
+					<div class="image">
+						<img src="img/home4.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div>	<!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>	<!-- close details -->
+				</div>	<!-- close news -->
+				<div class="news wow blog-news"> <!-- open news -->
+					<div class="image">
+						<img src="img/home3.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div> <!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>	<!-- close details -->
+				</div> <!-- close news -->
+				<div class="news wow fadeInLeft blog-news" data-wow-duration="1.5s" data-wow-offset="200"> <!-- open news -->
+					<div class="image">
+						<img src="img/home1.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div> <!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>	<!-- close details -->
+				</div>	<!-- close news -->
+				<div class="news wow zoomIn blog-news" data-wow-duration="1s" data-wow-offset="200"> <!-- open news -->
+					<div class="image">
+						<img src="img/home4.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div> <!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div> <!-- close details -->
+				</div> <!-- close news -->
+				<div class="news wow fadeInRight blog-news" data-wow-duration="1.5s" data-wow-offset="200">	<!-- open news -->
+					<div class="image">
+						<img src="img/home3.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div>	<!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div> <!-- close details -->
+				</div> <!-- close news -->
+				<div class="news wow fadeInUp blog-news" data-wow-duration=".5s" data-wow-offset="200"> <!-- open news -->
+					<div class="image">
+						<img src="img/home1.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div> <!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>	<!-- close details -->
+				</div>	<!-- close news -->
+				<div class="news wow fadeInUp blog-news" data-wow-duration="1s" data-wow-offset="200">	<!-- open news -->
+					<div class="image">
+						<img src="img/home4.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div>	<!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div> <!-- close details -->
+				</div> <!-- close news -->
+				<div class="news wow fadeInUp blog-news" data-wow-duration="1.5s" data-wow-offset="200"> <!-- open news -->
+					<div class="image">
+						<img src="img/home3.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div> <!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>	<!-- close details -->
+				</div>	<!-- close news -->
+				<div class="news wow fadeInUp blog-news" data-wow-duration=".5s" data-wow-offset="200"> <!-- open news -->
+					<div class="image">
+						<img src="img/home3.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div>	<!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>	<!-- close details -->
+				</div>	<!-- close news -->
+				<div class="news wow fadeInUp blog-news" data-wow-duration="1s" data-wow-offset="200"> <!-- open news -->
+					<div class="image">
+						<img src="img/home3.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div> <!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid vitae maximus...</p>
+						<a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+							<i class="fas fa-chevron-right"></i>
+							<i class="fas fa-chevron-right"></i>
+						</a>
+					</div>	<!-- close details -->
+				</div>	<!-- close news -->
+				<div class="news wow fadeInUp blog-news" data-wow-duration="1.5s" data-wow-offset="200"> <!-- open news -->
+					<div class="image">
+						<img src="img/home3.jpg" alt="" />
+					</div>
+					<div class="details"> <!-- open details -->
+						<h3 class="capitalize">
+							Housing Confidence Hits Record High As Prices Skyrocket
+						</h3>
+						<div class="icons">	<!-- open icons -->
+							<span><i class="fas fa-user"></i>Amanda Sayfried</span>
+							<span><i class="far fa-clock"></i>25, AUG 2019</span>
+						</div> <!-- close icons -->
+						<p>Integer luctus diam ac scerisque consectetur. Vimus dotnetact euismod lacus sit amet. Aenean interdus mid
+							vitae maximus...</p> <a href="./single-news.html" class='animsition-link'>More Details &nbsp;
+								<i class="fas fa-chevron-right"></i>
+								<i class="fas fa-chevron-right"></i>
+							</a>
+					</div>	<!-- close details -->
+				</div>	<!-- close news -->
+			</div>	<!-- close flex-box -->
+		</div>	<!-- close container -->
+		<div class="pagination wow fadeInUp" data-wow-duration="1.5s" data-wow-offset="150">
+			<ul>
+				<li> <a href="#"><i></i></a>
+				</li>
+				<li><a href="#">1</a>
+				</li>
+				<li><a href="#">2</a>
+				</li>
+				<li><a href="#">3</a>
+				</li>
+				<li> <a href="#"><i></i></a>
+				</li>
+			</ul>
+		</div> <!-- close pagination -->
+	</div> <!-- close latest-news  -->
+
+    <!-- ========================
+            footer                   
+    ======================== -->
+    
+    <div class="footer">
+        <div class="container">
+            <div class="flex-box">
+                <div class="col">
+                    <div class="logo-footer">
+                        <a href="index.html">
+                            <img src="img/logo.png" alt="" />
+                        </a>
+                    </div>
+                    <p>ula ridiculus a nam bibendum fusce lit ora. Ac ullamcorper blandit, viverrapell ntesque
+                        scelerisque. Phasellus aptent sociosqu nec posuere.</p>
+                    <ul class="social-icons">
+                        <li>
+                            <a href="https://www.facebook.com"><i class="fab fa-facebook-f fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com"><i class="fab fa-twitter fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://www.linkedin.com"><i class="fab fa-linkedin-in fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://plus.google.com"><i class="fab fa-google-plus-g fa-fw"></i></a>
+                        </li>
+                        <li>
+                            <a href="https://vimeo.com"><i class="fab fa-vimeo-v fa-fw"></i></a>
+                        </li>
+                    </ul>
+                </div> <!-- close col -->
+                <div class="col">
+                    <h4>Get In Touch</h4>
+                    <ul class="touch">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Office Address</span>
+                            <p>1707 Orlando Central pkwy ste 100 Orlando FL, USA</p>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone-volume fa-lg"></i>
+                            <span>Call Us 24/7</span>
+                            <p>(+241) 542 34251, (+241) 234 88232</p>
+                        </li>
+                        <li>
+                            <i class="far fa-envelope"></i>
+                            <span>Email Address</span>
+                            <p class="mail">info@webmail.com</p>
+                        </li>
+                    </ul>
+                </div> <!-- close col -->
+                <div class="col">
+                    <h4>Newslatter</h4>
+                    <p>Subscribe to our newsletter and we will inform your about newset projects.</p>
+                    <div class="news_letter">
+                        <form action="#" method="post">
+                            <input type="email" name="email" placeholder="Enter Your Email" class="form-control" />
+                            <button><i class="fas fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div> <!-- close col -->
+                <div class="col">
+                    <h4>LATEST NEWS</h4>
+                    <ul class="footer-news">
+                        <li>
+                            <i class="fas fa-angle-double-right"></i>
+                            <a href="">Housing confidence hits record high as prices skyrocket</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-angle-double-right"></i>
+                            <a href="">Taylor Swift is selling her Beverly Hills mansion</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-angle-double-right"></i>
+                            <a href="">NYC luxury housing market saturated with inventory, says celebrity realtor</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-angle-double-right"></i>
+                            <a href="">Housing confidence hits record high as prices skyrocket</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-angle-double-right"></i>
+                            <a href="">NYC luxury housing market saturated with inventory,says celebrity realtor</a>
+                        </li>
+                    </ul>
+                </div> <!-- close col -->
+            </div> <!-- close flex-box -->
+        </div> <!-- close container -->
+    </div> <!-- close footer -->
+
+
+    <div class="bottom-fooer" id="footer">
+        <div clas="container">
+            <div class="flex-box">
+                <p>Copyright <strong>Maagaza</strong> &copy; 2019 All Right Reserved &reg;</p>
+                <span>Made with love <i class="fa fa-heart pulse2"></i> in <a href="#">ICONS</a> </span>
+            </div> <!-- close flex-box -->
+        </div> <!-- close container -->
+	</div> <!-- close bottom-footer -->
+	
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/animsition.min.js"></script>
+	<script src="js/swiper.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+	<script>
+		var myButton = document.getElementById("up");
+
+		function scroll() {
+			if (window.pageYOffset >= 500) {
+				myButton.style.display = "block";
+			} else {
+				myButton.style.display = "none";
+			}
+		}
+
+		window.addEventListener("scroll", scroll);
+
+		myButton.onclick = function () {
+			window.scrollTo(0, 0);
+		};
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,234 @@
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  padding: 2rem 0;
+  background-color: $mainColor;
+
+  .flex-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    .col {
+      width: calc(100% / 4.5);
+
+      h4 {
+        font-size: 1.2rem;
+        font-weight: normal;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        padding-bottom: 0.5rem;
+        color: $primaryColor;
+      }
+
+      .logo-footer {
+        width: 14rem;
+      }
+
+      p {
+        color: #ddd;
+        font-size: 0.7rem;
+        line-height: 1.3;
+        font-weight: 100;
+      }
+
+      i {
+        color: $primaryColor;
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 2rem;
+        
+        li {
+          
+          a {
+            padding: 0.5rem;
+            display: block;
+            transform: translatey(0);
+            transition: all 0.2s linear;
+
+            &:hover {
+              transform: translatey(-.2rem);
+              box-shadow: 0 0 5px $primaryColor;
+            }
+          }
+        }
+      }
+
+      .touch {
+        span {
+          font-size: 0.8rem;
+          margin-left: 0.4rem;
+          color: #eee;
+          font-weight: 600;
+        }
+
+        p {
+          font-size: .7rem;
+          margin: 0.5rem 0;
+          color: #ddd;
+          border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+          padding-bottom: 0.5rem;
+          line-height: 1;
+        }
+
+        .mail {
+          border-bottom: none;
+        }
+      }
+
+      form {
+        display: flex;
+        align-items: center;
+        margin-top: 4rem;
+
+        input[type="email"] {
+          border: none;
+          outline: none;
+          font-size: 0.8rem;
+          padding: 0 0.5rem;
+          width: 12rem;
+          height: 2rem;
+        }
+
+        button {
+          background: $primaryColor;
+          padding: 0 0.5rem;
+          width: 2rem;
+          height: 2rem;
+          cursor: pointer;
+          border: none;
+          outline: none;
+
+          i {
+            color: $mainColor;
+          }
+        }
+      }
+
+      .footer-news {
+        li {
+          display: flex;
+          align-items: center;
+          margin-bottom: .5rem;
+          line-height: 1.5;
+          position: relative;
+          transition: all .1s linear;
+          
+          
+          i {
+            font-size: .7rem;
+            position: absolute;
+            left: -15px;
+            top: 0;
+            color: #fff;
+            margin-top: .1rem;
+            opacity: 0;
+            display: block;
+            transition: all 0.4s;
+          }
+
+          &:hover {
+            transform: translatex(.7rem);
+          }
+          
+          &:hover a {
+            color: #ccc;
+          }
+
+          &:hover i {
+            opacity: 1;
+          }
+          
+          a {
+            color: #ddd;
+            font-size: 0.7rem;
+            transition: all .2s linear;
+          }
+        }
+      }
+
+      @media (max-width: 1020px) {
+        width: 40%;
+        margin-bottom: 2rem;
+      }
+
+      @media (max-width: 620px) {
+        width: 100%;
+        margin-bottom: 2rem;
+      }
+    }
+
+    @media (max-width: 1020px) {
+      justify-content: space-around;
+    }
+  }
+}
+
+.bottom-fooer {
+  background: #222;
+  color: $primaryColor;
+  padding: 1rem 0;
+  font-size: 0.9rem;
+
+  @media (max-width: 550px) {
+    font-size: .8rem;
+  }
+
+  .flex-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      margin-right: 1rem;
+    }
+
+    i {
+      color: $secondaryColor;
+      font-size: 1rem;
+      position: relative;
+      animation: pulse 1s linear infinite;
+
+      &:after {
+        content: "\f004";
+        position: absolute;
+        top: 0;
+        left: 0;
+        animation: pulse 1s linear infinite;
+      }
+
+      @keyframes pulse {
+        from {
+          transform: scale(1);
+          transform-origin: center center;
+          animation-timing-function: ease-out;
+        }
+        10% {
+          transform: scale(1.5);
+          animation-timing-function: ease-in;
+        }
+        15% {
+          transform: scale(1.3);
+          animation-timing-function: ease-out;
+        }
+        25% {
+          transform: scale(1.5);
+          animation-timing-function: ease-in;
+        }
+        35% {
+          transform: scale(2);
+          animation-timing-function: ease-out;
+        }
+      }
+    }
+
+    a {
+      color: $primaryColor;
+    }
+
+    @media (max-width: 610px) {
+      flex-direction: column;
+    }
+  }
+}

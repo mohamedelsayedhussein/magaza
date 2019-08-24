@@ -1,0 +1,262 @@
+header {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+header.fixed-header {
+  position: fixed;
+  left: 0;
+  z-index: 11;
+
+  .head-control {
+    transition: all 0.4s ease-in-out;
+
+    .flex-box {
+      display: flex;
+      justify-content: space-between;
+
+      .our-direct-contacts {
+        display: flex;
+        align-items: center;
+        line-height: 40px;
+
+        li {
+          a {
+            font-size: 0.8rem;
+            color: #fff;
+            pointer-events: none; 
+
+            @media (max-width: 550px) {
+                font-size: .7rem !important;
+            }
+
+            i {
+              padding-right: 0.5rem;
+            }
+          }
+        }
+
+        li:nth-child(2) {
+          margin-left: 1rem;
+        }
+      }
+
+      .log-in-btn {
+        line-height: 40px;
+        
+        a {
+          display: block;
+          color: #fff;
+          font-weight: 100;
+          font-size: .9rem;
+          transition: all .2s linear;
+
+          span {
+            color: $mainColor;
+            transition: all .1s linear;
+          }
+
+          &:hover {
+            color: $mainColor;
+          }
+
+          &:hover span {
+            color: #fff;
+          }
+        }
+
+        @media (max-width: 720px) {
+          display: none;
+        }
+      }
+
+      .our-social-contacts {
+        line-height: 40px;
+        display: flex;
+        align-items: center;
+
+        li {
+          a {
+            display: inline-block;
+            color: #fff;
+            padding: 0 .7rem;
+            font-size: 0.9rem;
+            transition: all 0.2s linear;
+
+            @media (max-width: 550px) {
+                font-size: .7rem !important;
+                padding: 0 .3rem;
+            }
+          }
+
+          .facebook:hover {
+            color: #3b5998;
+          }
+
+          .twitter:hover {
+            color: #00aced;
+          }
+
+          .youtube:hover {
+            color: #bb0000;
+          }
+
+          .linkedin-in:hover {
+            color: #00a0dc;
+          }
+        }
+      }
+    }
+  }
+
+  .header-top {
+    background-color: $primaryColor;
+    height: 40px;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    z-index: -1;
+
+    @media (max-width: 550px) {
+        font-size: .7rem !important;
+    }
+
+    @media(max-width: 770px) {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+  }
+
+  .header-mid {
+    background-color: $mainColor;
+    width: 100%;
+    line-height: 100px;
+    position: relative;
+    z-index: 1;
+
+    @media (max-width: 770px) {
+      line-height: 0;
+    }
+
+    .flex-box {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      .menu-logo {
+        h2 {
+          font: 400 2.2rem "Luckiest Guy", cursive;
+          color: #fff;
+          letter-spacing: 1px;
+          margin: 0;
+          padding: 0;
+
+          span {
+            color: $primaryColor;
+          }
+
+          @media (max-width: 1195px) {
+            font-size: 1.8rem;
+          }
+        }
+
+        @media (max-width: 1045px) {
+          display: none;
+        }
+      }
+
+      .primary-nav {
+
+        .menu-bar-links {
+          display: flex;
+
+          @media (max-width: 770px) {
+            display: none;
+          }
+        }
+
+        a {
+          display: block;
+          color: #ddd;
+          margin: 0 0.8rem;
+          font-size: 0.9rem;
+          transition: all 0.2s linear;
+          position: relative;
+
+          @media (max-width: 1195px) {
+            font-size: 0.8rem;
+          }
+
+          &:after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background: $primaryColor;
+            transform: scale(0);
+            transform-origin: left;
+            transition: all 0.2s linear;
+          }
+
+          &:hover:after {
+            width: 100%;
+            transform: scale(1);
+          }
+
+          &:hover {
+            color: $primaryColor;
+          }
+        }
+
+        a.active {
+          color: $primaryColor;
+          font-weight: bold;
+        }
+
+        a.active:after {
+          width: 100%;
+          transform: scale(1);
+        }
+      }
+    }
+  }
+}
+
+.menu-sm-screen {
+  display: none;
+
+  @media (max-width: 770px) {
+    display: block;
+  }
+}
+
+/* == Sticky Stuff == */
+
+header.sticky .header-top {
+  height: 0;
+  line-height: 0;
+
+  @media (max-width: 770px) {
+      height: 40px;
+      line-height: 40px;
+  }
+}
+
+header.sticky .header-mid,
+header.sticky .header-mid .logo,
+header.sticky .header-mid nav.primary-nav ul {
+  line-height: 50px;
+  
+  @media (max-width: 770px) {
+    line-height: 0;
+  }
+}
+
+header.sticky .header-mid {
+  box-shadow: 0px 0px 25px rgba(0, 0, 0, 1);
+}

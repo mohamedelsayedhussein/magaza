@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>maagaza</title>
+  <!--  create shorcut icon logo -->
+  <link rel="shortcut icon" href="img/logo.png" />
+  <!--  reset css default values  -->
+  <link rel="stylesheet" href="vendors/normalize.css" />
+  <!-- external style file -->
+  <link rel="stylesheet" href="css/style.css" />
+  <!--  font awesome icons library  -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <!--  animation library for some animations  -->
+  <link rel="stylesheet" href="vendors/animate.css" />
+  <!-- using swiper slider images -->
+  <link rel="stylesheet" href="vendors/swiper.min.css" />
+  <!-- transition page animation -->
+  <link rel="stylesheet" href="vendors/animsition.min.css" />
+  <!--  using google web fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet" />
+  <!-- slick slider cdn  -->
+  <link rel="stylesheet" type="text/css" href="vendors/slick.css" />
+  <link rel="stylesheet" type="text/css" href="vendors/slick-theme.css" />
+  <!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="animsition-overlay" data-animsition-overlay="true">
+  <!--[if lte IE 9]>
+      <p class="browserupgrade">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="https://browsehappy.com/">upgrade your browser</a> to improve
+        your experience and security.
+      </p>
+    <![endif]-->
+  <!-- ==================================
+            create top button
+======================================= -->
+  <button id="up"><i class="fas fa-chevron-up"></i></button>
+
+  <!-- =============================
+          message button 
+  ===============================-->
+  <div class="message">
+    <a href="#"><i class="far fa-envelope"></i></a>
+  </div>
+
+  <!-- ===========================
+            header
+================================ -->
+
+  <!-- hamburger menu -->
+  <div class="menu wow flip menu-sm-screen" data-wow-delay="1s">
+    <div class="bar"></div>
+    <span>Menu</span>
+  </div>
+
+  <div class="sidebar"> <!-- open sidebar -->
+    <ul class="capitalize">
+      <li>
+        <a href="./index.html" class="animsition-link">Home</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="./find-home.html" class="animsition-link">Find a Home</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="./news.html" class="animsition-link">News <span>&</span> Events</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="./developers.html" class="animsition-link">Developers</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="./about.html" class="animsition-link">About Us</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="./contact.html" class="animsition-link">Contact Us</a>
+        <div class="line"></div>
+      </li>
+      <li>
+        <a href="./log.html" class="animsition-link">Log In <span>OR</span> Register</a>
+      </li>
+    </ul>
+    <div class="close"><span>&times;</span></div>
+    <div class="icons"> <!-- Open Icons -->
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-twitter"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-linkedin-in"></i></a>
+    </div> <!-- close Icons -->
+  </div> <!-- close sidebar -->
+
+  <!-- ==============================
+              header
+==================================-->
+  <header class="fixed-header">
+    <div class="head-control header-top">
+      <div class="container">
+        <div class="flex-box">
+          <ul class="our-direct-contacts">
+            <li>
+              <a href="#"><i class="fas fa-phone-volume fa-lg"></i>(+241) 542 34251</a>
+            </li>
+            <li>
+              <a href="#"><i class="far fa-envelope"></i>info@webmail.com</a>
+            </li>
+          </ul>
+          <div class="log-in-btn">
+            <a href="./log.html" class="animsition-link">Log In <span>||</span> Register</a>
+          </div>
+          <ul class="our-social-contacts">
+            <li>
+              <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+            </li>
+            <li>
+              <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#" class="youtube"><i class="fab fa-youtube"></i></a>
+            </li>
+            <li>
+              <a href="#" class="linkedin-in"><i class="fab fa-linkedin-in"></i></a>
+            </li>
+          </ul>
+        </div> <!-- close flex-box-->
+      </div> <!-- close container -->
+    </div> <!-- close header-top -->
+    <div class="head-control header-mid">
+      <div class="flex-box">
+        <div class="menu-logo">
+          <a href="./index.html" class="animsition-link">
+            <h2><span>MAGAZA</span> HOLDING</h2>
+          </a>
+        </div> <!-- close menu-logo -->
+        <nav class="primary-nav">
+          <ul class="menu-bar-links">
+            <li><a href="./index.html" class="animsition-link">Home</a></li>
+            <li>
+              <a href="./find-home.html" class="animsition-link">Find a Home</a>
+            </li>
+            <li>
+              <a href="./news.html" class="animsition-link">News & Events</a>
+            </li>
+            <li>
+              <a href="./developers.html" class="animsition-link">Developers</a>
+            </li>
+            <li>
+              <a href="./about.html" class="animsition-link">About Us</a>
+            </li>
+            <li>
+              <a href="./contact.html" class="animsition-link">Contact Us</a>
+            </li>
+          </ul>
+        </nav>
+      </div> <!-- close flex-box -->
+    </div> <!-- close header-mid -->
+  </header>
+
+  <!-- ======================
+		Our single list 
+	======================== -->
+
+  <div class="single-list">
+    <div class="container">
+      <div class="go-back">
+        <a href="./index.html" class="animsition-link"><i class="fa fa-home"></i>Home</a>
+        <span><i class="fa fa-angle-right"></i>Our Projects</span>
+        <span><i class="breadcrumb-arrow"></i>Single Listing</span>
+      </div>
+
+      <div class="flex-box">
+        <div class="box-slider">
+          <div class="slider-for">
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+          </div>
+          <div class="slider-nav">
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+            <div>
+              <img src="img/home1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="ask">
+          <h5>Interested! Ask about this project</h5>
+          <form>
+            <input type="text" placeholder="Your Name" />
+            <input type="text" placeholder="Your Mobile" />
+            <input type="text" placeholder="Your Email" />
+            <textarea placeholder="Your Message" rows="7"></textarea>
+            <button>SUBMIT</button>
+          </form>
+        </div>
+      </div> <!-- close flex-box -->
+
+      <div class="flex-box">
+        <div class="single-list-content">
+          <h3>305 North Palm Drive</h3>
+          <div class="row">
+            <div class="left">
+              <p><i class="fas fa-map-marker"></i>Beverly Hills, CA 90210</p>
+            </div>
+            <div class="right">
+              <a href="#">4,500,000 EGP</a>
+            </div>
+          </div> <!-- close row -->
+          <h3>Property Details</h3>
+          <div class="row property-details">
+            <div>
+              <p><i class="fas fa-th"></i> 1500 Square foot</p>
+              <p><i class="fas fa-bed"></i> 16 Bedrooms</p>
+              <p><i class="fas fa-user"></i> Gina Wesley</p>
+            </div>
+            <div>
+              <p><i class="fas fa-car"></i> 2 Garages</p>
+              <p><i class="fas fa-building"></i> Family Villa</p>
+              <p><i class="far fa-clock"></i> 1 days ago</p>
+            </div>
+            <div>
+              <p><i class="fas fa-toilet"></i> 8 Bathrooms</p>
+              <p><i class="fas fa-trophy"></i> 5 years age</p>
+            </div>
+          </div> <!-- close row property-details -->
+          <h3>Description</h3>
+          <div class="description">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+              Phasellus egestas fermentum ornareste. Donec index lorem.
+              Vestibulum aliquet odio, eget tempor libero. Cras congue cursus
+              tincidunt. Nullam venenatis dui id orci egestas tincidunt id
+              elit. Nullam ut vuputate justo. Integer lacnia pharetra pretium.
+              Casan ante ipsum primis in faucibus orci luctus et ultrice.
+            </p>
+          </div> <!-- close description -->
+          <h3>Property Features</h3>
+          <div class="row property-features">
+            <div>
+              <p><i class="far fa-check-circle"></i> Air conditioning</p>
+              <p><i class="far fa-check-circle"></i> Telephone</p>
+              <p><i class="far fa-check-circle"></i> Laundry Room</p>
+            </div>
+            <div>
+              <p><i class="far fa-check-circle"></i> Central Heating</p>
+              <p><i class="far fa-check-circle"></i> Family Villa</p>
+              <p><i class="far fa-check-circle"></i> Metro Central</p>
+            </div>
+            <div>
+              <p><i class="far fa-check-circle"></i> City views</p>
+              <p><i class="far fa-check-circle"></i> Internet</p>
+              <p><i class="far fa-check-circle"></i> Electric Range</p>
+            </div>
+          </div> <!-- close property-features -->
+          <h3>Floor Plans</h3>
+          <div id="accordion">
+            <div class="accordianheader">
+              <h4>First Floor : &nbsp; 660 sq ft. <i></i></h4>
+            </div>
+            <div class="accordianbody">
+              <img src="img/plan-sketch.jpg" alt="" />
+            </div>
+            <div class="accordianheader">
+              <h4>Second Floor : &nbsp; 660 sq ft. <i></i></h4>
+            </div>
+            <div class="accordianbody">
+              <img src="img/plan-sketch.jpg" alt="" />
+            </div>
+            <div class="accordianheader">
+              <h4>third Floor : &nbsp; 660 sq ft. <i></i></h4>
+            </div>
+            <div class="accordianbody">
+              <img src="img/plan-sketch.jpg" alt="" />
+            </div>
+            <div class="accordianheader">
+              <h4>fourth Floor : &nbsp; 660 sq ft. <i></i></h4>
+            </div>
+            <div class="accordianbody">
+              <img src="img/plan-sketch.jpg" alt="" />
+            </div>
+          </div> <!-- close accordion -->
+
+          <h3>Location</h3>
+          <div class="map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3456.300107310591!2d31.31558791497527!3d29.97080412900278!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14583907894e4e2b%3A0xb8b806b2df5ce3e9!2sMaagaza!5e0!3m2!1sen!2seg!4v1556721395195!5m2!1sen!2seg"
+              frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div> <!-- close map -->
+        </div> <!-- close single-list-content -->
+
+        <div class="related">
+          <h3>Related Property</h3>
+
+          <div class="project"> <!-- open project -->
+            <a href="./single-list.html" class="animsition-link">
+              <div class="img"><img src="img/home1.jpg" alt="" /></div>
+              <div class="overlay"> <!-- open overlay -->
+                <div class="details"> <!-- open details -->
+                  <h3 class="capitalize">New Cairo</h3>
+                  <p class="price">Starting Price</p>
+                  <span>1,250,000 EGP</span>
+                </div> <!-- close details -->
+              </div> <!-- close overlay -->
+            </a>
+          </div> <!-- close project -->
+
+          <div class="project"> <!-- open project -->
+            <a href="./single-list.html" class="animsition-link">
+              <div class="img"><img src="img/home1.jpg" alt="" /></div>
+              <div class="overlay"> <!-- open overlay -->
+                <div class="details"> <!-- open details -->
+                  <h3 class="capitalize">New Cairo</h3>
+                  <p class="price">Starting Price</p>
+                  <span>1,250,000 EGP</span>
+                </div> <!-- close details -->
+              </div> <!-- close overlay -->
+            </a>
+          </div> <!-- close project -->
+
+          <div class="project"> <!-- open project -->
+            <a href="./single-list.html" class="animsition-link">
+              <div class="img"><img src="img/home1.jpg" alt="" /></div>
+              <div class="overlay"> <!-- open overlay -->
+                <div class="details"> <!-- open details -->
+                  <h3 class="capitalize">New Cairo</h3>
+                  <p class="price">Starting Price</p>
+                  <span>1,250,000 EGP</span>
+                </div> <!-- close details -->
+              </div> <!-- close overlay -->
+            </a>
+          </div> <!-- close project -->
+
+          <div class="project"> <!-- open project -->
+            <a href="./single-list.html" class="animsition-link">
+              <div class="img"><img src="img/home1.jpg" alt="" /></div>
+              <div class="overlay"> <!-- open overlay -->
+                <div class="details"> <!-- open details -->
+                  <h3 class="capitalize">New Cairo</h3>
+                  <p class="price">Starting Price</p>
+                  <span>1,250,000 EGP</span>
+                </div> <!-- close details -->
+              </div> <!-- close overlay -->
+            </a>
+          </div> <!-- close project -->
+        </div> <!-- close related -->
+      </div>  <!-- close flex-box -->
+    </div> <!-- close container -->
+  </div> <!-- close single-list -->
+
+    <!-- ========================
+            footer                   
+    ======================== -->
+    
+    <div class="footer">
+		<div class="container">
+			<div class="flex-box">
+				<div class="col">
+					<div class="logo-footer">
+						<a href="index.html">
+							<img src="img/logo.png" alt="" />
+						</a>
+					</div>
+					<p>ula ridiculus a nam bibendum fusce lit ora. Ac ullamcorper blandit, viverrapell ntesque
+						scelerisque. Phasellus aptent sociosqu nec posuere.</p>
+					<ul class="social-icons">
+						<li>
+							<a href="https://www.facebook.com"><i class="fab fa-facebook-f fa-fw"></i></a>
+						</li>
+						<li>
+							<a href="https://twitter.com"><i class="fab fa-twitter fa-fw"></i></a>
+						</li>
+						<li>
+							<a href="https://www.linkedin.com"><i class="fab fa-linkedin-in fa-fw"></i></a>
+						</li>
+						<li>
+							<a href="https://plus.google.com"><i class="fab fa-google-plus-g fa-fw"></i></a>
+						</li>
+						<li>
+							<a href="https://vimeo.com"><i class="fab fa-vimeo-v fa-fw"></i></a>
+						</li>
+					</ul>
+				</div> <!-- close col -->
+				<div class="col">
+					<h4>Get In Touch</h4>
+					<ul class="touch">
+						<li>
+							<i class="fas fa-map-marker-alt"></i>
+							<span>Office Address</span>
+							<p>1707 Orlando Central pkwy ste 100 Orlando FL, USA</p>
+						</li>
+						<li>
+							<i class="fas fa-phone-volume fa-lg"></i>
+							<span>Call Us 24/7</span>
+							<p>(+241) 542 34251, (+241) 234 88232</p>
+						</li>
+						<li>
+							<i class="far fa-envelope"></i>
+							<span>Email Address</span>
+							<p class="mail">info@webmail.com</p>
+						</li>
+					</ul>
+				</div> <!-- close col -->
+				<div class="col">
+					<h4>Newslatter</h4>
+					<p>Subscribe to our newsletter and we will inform your about newset projects.</p>
+					<div class="news_letter">
+						<form action="#" method="post">
+							<input type="email" name="email" placeholder="Enter Your Email" class="form-control" />
+							<button><i class="fas fa-paper-plane"></i></button>
+						</form>
+					</div>
+				</div> <!-- close col -->
+				<div class="col">
+					<h4>LATEST NEWS</h4>
+					<ul class="footer-news">
+						<li>
+							<i class="fas fa-angle-double-right"></i>
+							<a href="">Housing confidence hits record high as prices skyrocket</a>
+						</li>
+						<li>
+							<i class="fas fa-angle-double-right"></i>
+							<a href="">Taylor Swift is selling her Beverly Hills mansion</a>
+						</li>
+						<li>
+							<i class="fas fa-angle-double-right"></i>
+							<a href="">NYC luxury housing market saturated with inventory, says celebrity realtor</a>
+						</li>
+						<li>
+							<i class="fas fa-angle-double-right"></i>
+							<a href="">Housing confidence hits record high as prices skyrocket</a>
+						</li>
+						<li>
+							<i class="fas fa-angle-double-right"></i>
+							<a href="">NYC luxury housing market saturated with inventory,says celebrity realtor</a>
+						</li>
+					</ul>
+				</div> <!-- close col -->
+			</div> <!-- close flex-box -->
+		</div> <!-- close container -->
+	</div> <!-- close footer -->
+	
+	
+	<div class="bottom-fooer" id="footer">
+		<div clas="container">
+			<div class="flex-box">
+				<p>Copyright <strong>Maagaza</strong> &copy; 2019 All Right Reserved &reg;</p>
+				<span>Made with love <i class="fa fa-heart pulse2"></i> in <a href="#">ICONS</a> </span>
+			</div> <!-- close flex-box -->
+		</div> <!-- close container -->
+	</div> <!-- close bottom-footer -->
+
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <script src="js/animsition.min.js"></script>
+  <script src="js/swiper.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script>
+    var myButton = document.getElementById("up");
+
+    function scroll() {
+      if (window.pageYOffset >= 500) {
+        myButton.style.display = "block";
+      } else {
+        myButton.style.display = "none";
+      }
+    }
+
+    window.addEventListener("scroll", scroll);
+
+    myButton.onclick = function () {
+      window.scrollTo(0, 0);
+    };
+
+    $(document).ready(function () {
+      $(".slider-for").slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        fade: false,
+        speed: 1000,
+        autoplaySpeed: 4000,
+        asNavFor: ".slider-nav"
+      });
+      $(".slider-nav").slick({
+        autoplay: true,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        asNavFor: ".slider-for",
+        dots: false,
+        arrows: false,
+        centerMode: true,
+        focusOnSelect: true
+      });
+    });
+
+    $("#accordion").accordion({
+      heightStyle: "content",
+      active: false,
+      collapsible: true,
+      header: "div.accordianheader"
+    });
+  </script>
+</body>
+
+</html>
